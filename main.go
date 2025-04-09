@@ -25,6 +25,10 @@ func insertValue(arr *[]int) {
 	*arr = append(*arr, int(value))
 }
 
+/*
+deleteValue es una funcion que por medio del puntero al array
+elimina un valor del array
+*/
 func deleteValue(arr *[]int) {
 	fmt.Print("Ingrese el indice a eliminar: ")
 	var index int

@@ -2,6 +2,9 @@ package main
 
 type sortFunc func(a, b int) bool
 
+/*
+merge es una funcion que combina dos arreglos ordenados
+*/
 func merge(L, R []int, fn sortFunc) []int {
 	A := make([]int, len(L)+len(R))
 	i, j, k := 0, 0, 0
@@ -34,6 +37,9 @@ func merge(L, R []int, fn sortFunc) []int {
 	return A
 }
 
+/*
+sort es una funcion que ordena un arreglo
+*/
 func sort(A []int, fn sortFunc) []int {
 	if fn == nil {
 		fn = func(a, b int) bool {

@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+/*
+binarySearch es una funcion que busca un valor en un arreglo
+ordenado usando el algoritmo de busqueda binaria
+*/
 func binarySearch(arr []int) int {
 	var target int
 	fmt.Print("Ingrese el valor a buscar: ")
@@ -26,6 +30,10 @@ func binarySearch(arr []int) int {
 	return -1
 }
 
+/*
+linearSearch es una funcion que realiza la busqueda de un valor en la lista
+mediante una busqueda lineal
+*/
 func linearSearch(arr []int) int {
 	var target int
 	fmt.Print("Ingrese el valor a buscar: ")
